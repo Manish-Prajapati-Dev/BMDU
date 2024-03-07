@@ -44,23 +44,6 @@ export default function HomeScreen({ navigation }) {
         }
     }
 
-    // const displayCategory = () => {
-    //     const uniqueCategories = [...new Set(data.map(item => item.category))];
-    //     return uniqueCategories.map((item) => {
-    //         const dd = data.filter((i) => { return (i.category === item) })
-    //         return (<View>
-    //             <FlatListCom
-    //                 data={dd}
-    //                 heading={item}
-    //                 clickSeeAll={() => navigation.navigate("ProductView", {
-    //                     item: dd
-    //                 })}
-    //             />
-    //         </View>
-    //         )
-    //     })
-    // }
-
     React.useEffect(() => {
         apiCall()
     }, [])
